@@ -1,0 +1,17 @@
+.header_logo {
+    height: 80px;
+    margin-left: 20px;
+}
+
+.header_left {
+    display: flex;    
+}
+
+.header_left h3 {
+    font-weight: bolder;
+    color: gray;
+    margin-top: 40px;
+}
+
+/* #e58372 */
+
