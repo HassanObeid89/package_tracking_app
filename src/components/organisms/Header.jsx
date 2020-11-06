@@ -2,13 +2,15 @@ import React from 'react';
 
 
 import logo from "../../assets/parcel-tailwind.svg";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import header from '../../styles/header.css';
 
-
+import { ImUser } from "react-icons/im";
+import { FaUser } from "react-icons/fa";
 
 
 
 function Header( { data } ) {
+
 
     const {
         user_name,
@@ -20,13 +22,11 @@ function Header( { data } ) {
         <div className = 'header'>
             <div className = 'header_left'>
             <img className = 'header_logo' src={logo} alt=""/>
-            <h3>Package Tracker</h3>
+            <p className='logo_text'>Package Tracker</p>
             </div>
-            <div className="header_icons">
-                <h1>head</h1>
-                {/* <h2>{id}</h2> */}
-                {/* <p>{user_name}</p> */}
-                <p>{user_name}</p>
+            <div >
+                <span className='user_name'><FaUser  /></span>
+                <p className="header_icon">{user_name}</p>
             </div>
         </div>
     )

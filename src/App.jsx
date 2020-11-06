@@ -8,6 +8,7 @@ import Header from './components/organisms/Header';
 import OrdersPage from './components/templates/OrdersPage';
 
 
+
 function App() {
 
   const [packageDetail, setpackageDetail] = useState([]);
@@ -38,7 +39,7 @@ function App() {
     return(
 
     // showing the pages
-    <div className="App">
+    <div>
       {/* Header */}
 
         {status === 1 ? <Header data={packageDetail[0]} /> : null}

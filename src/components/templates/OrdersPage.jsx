@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Card from '../molecules/Card';
+import orderPage from '../../styles/orderPage.css'
 
 function OrdersPage({ data }) {
 
