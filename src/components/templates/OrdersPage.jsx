@@ -14,8 +14,8 @@ function OrdersPage({ data }) {
     return (
         < div className="userDetails" >
             <div>
-                <h1>order page</h1>
-                <div>{Cards}</div>
+                
+                <div className='cardDetails'>{Cards}</div>
             </div>
             
            

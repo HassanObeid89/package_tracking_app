@@ -40,19 +40,22 @@ function App() {
 
     // showing the pages
     <div>
+
+      <div>
       {/* Header */}
 
         {status === 1 ? <Header data={packageDetail[0]} /> : null}
 
+      </div>
         {/* Orders page */}
       
-     
+      <div className = 'order'>
         {status === 1 ? <OrdersPage data={packageDetail} /> :null}
 
 
         {status === 2 ? <p>Data not found</p> : null}
-     
-
+      </div>
+      
       
     </div>
 

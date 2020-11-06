@@ -24,9 +24,9 @@ function Card( {data} ) {
             
             <div>
                 
-                <h1>{eta}</h1>
+                <p>{eta}</p>
                 <hr/>
-                <h4>{id}</h4>
+                <p>{id}</p>
                
 
             </div>
