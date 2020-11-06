@@ -1,17 +1,20 @@
 import React from 'react'
 
-import orderpage from '../../styles/orderPage.css'
+import Card from '../molecules/Card';
 
-function OrdersPage({ packageDetail }) {
+function OrdersPage({ data }) {
 
-    // const Cards = packageDetail.map((item) => {
-    //     return <OrdersPage key={item.id} data={item} />;
-    // });
-    //  console.log(packageDetail)
+    const Cards = data.map((item) => {
+        return <Card key={item.id} data={item} />;
+    });
+    
+    
+    
     return (
         < div className="userDetails" >
             <div>
                 <h1>order page</h1>
+                <div>{Cards}</div>
             </div>
             
            

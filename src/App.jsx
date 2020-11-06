@@ -1,27 +1,36 @@
 //React core
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+
 
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Header from './components/organisms/Header';
 import OrdersPage from './components/templates/OrdersPage';
 
+
 function App() {
 
-  const [packageDetail, setpackageDetail] = useState([])
+  const [packageDetail, setpackageDetail] = useState([]);
+  const [status, setStatus] = useState(0);
+  const endPoint = 'https://my.api.mockaroo.com/orders.json?key=e49e6840';
 
   useEffect(() => {
-    axios
-    .get('https://my.api.mockaroo.com/orders.json?key=e49e6840')
-    .then(response => {
-      console.log(response)
-      setpackageDetail(response.data)
-    })
-    .catch(error => {
-      console.log(error)
-    })
-  },[])
+    const getData = async () => {
+      try {
+        const response = await fetch(endPoint, {mode: "cors"});
+        const data = await response.json();
+        setpackageDetail(data);
+        setStatus(1);
+      }
+  
+    
+    catch {
+      setStatus(2)
+    };
+  }
+  getData();
+
+  },[]);
   
   
 
@@ -31,15 +40,18 @@ function App() {
     // showing the pages
     <div className="App">
       {/* Header */}
-      <Header />
 
-        {/* Orders Cards */}
-      
-      <div>
-        <OrdersPage data={packageDetail} />
-      </div>
+        {status === 1 ? <Header data={packageDetail[0]} /> : null}
 
+        {/* Orders page */}
       
+     
+        {status === 1 ? <OrdersPage data={packageDetail} /> :null}
+
+
+        {status === 2 ? <p>Data not found</p> : null}
+     
+
       
     </div>
 
