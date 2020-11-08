@@ -2,13 +2,13 @@
 import React, { useEffect, useState } from 'react';
 
 
-// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 
 import Header from './components/organisms/Header';
 import OrdersPage from './components/templates/OrdersPage';
 import Footer from './components/organisms/Footer';
 
-
+import './styles/style.css';
 
 function App() {
 
