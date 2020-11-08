@@ -1,31 +1,19 @@
 /* @import "https://sdaproject.se/training-wheels.css"; */
 
 
-
-
-
 .inline {
   display: inline-block;
   margin: 20px 0px 10px 60px ;
-  /* width: 60%; */
-  /* border: 1px burlywood solid; */
-  /* background-color: white; */
-
-
-
   height:230px;
   width:260px;
   background:
   linear-gradient(-135deg, antiquewhite 5px, transparent 0) 0 5px,
   linear-gradient(135deg, antiquewhite 5px, lightgray 0) 0 5px;
   background-color: antiquewhite;
-  background-position: left bottom;
-    
+  background-position: left bottom;   
   background-repeat: repeat-x;
   background-size: 10px 10px;
   
-  /* vertical-align: middle; */
-  /* background-color: blue; */
 }
 
 
@@ -40,9 +28,7 @@
    background-color: rgb(238, 224, 206);
     cursor: pointer;
 }
-/* #f5d6c4 */
-/* #f8c361 */
-/* #eaa988 */
+
 
 
 

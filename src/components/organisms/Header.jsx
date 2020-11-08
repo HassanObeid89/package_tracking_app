@@ -2,8 +2,6 @@ import React from 'react';
 
 
 import logo from "../../assets/logo.svg";
-import header from '../../styles/header.css';
-
 import { FaUser } from "react-icons/fa";
 
 

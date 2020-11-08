@@ -6,7 +6,6 @@ import { HiOutlineMailOpen } from "react-icons/hi";
 import { FiPhoneCall } from "react-icons/fi";
 import logo from "../../assets/footerLogo.svg";
 
-import footer from '../../styles/footer.css';
 
 
 function Footer() {
