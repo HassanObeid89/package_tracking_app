@@ -11,3 +11,16 @@
 }
 
 
+@media (min-width: 950px) {
+  
+  .footer_style {
+
+    justify-content: center ;
+    padding: 10px;
+    
+  }
+
+  .footer_style p {
+      padding: 10px;
+  }
+}
