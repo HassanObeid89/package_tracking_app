@@ -1,5 +1,5 @@
-.header_logo {
-    height: 80px;
+.logo {
+    height: 100px;
 }
 
 
@@ -38,13 +38,14 @@
  .user_name {
     color: gray;
     font-weight: bolder;   
-    font-size: 40px;
+    margin-left: 10px;
     
 }
 
 .header_icon {
     color: gray;
-    font-weight: bolder;
+    font-size: 30px;
+    
 }
 
 

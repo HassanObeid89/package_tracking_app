@@ -6,6 +6,7 @@ import React, { useEffect, useState } from 'react';
 
 import Header from './components/organisms/Header';
 import OrdersPage from './components/templates/OrdersPage';
+import Footer from './components/organisms/Footer';
 
 
 
@@ -41,8 +42,8 @@ function App() {
     // showing the pages
     <div className = 'App'>
 
-      
-      {/* Header */}
+      <div className = 'wrapper'>
+              {/* Header */}
 
         {status === 1 ? <Header data={packageDetail[0]} /> : null}
 
@@ -55,8 +56,11 @@ function App() {
 
         {status === 2 ? <p>Data not found</p> : null}
      
-      
-      
+      {/* Footer */}
+
+        {status === 1 ? <Footer /> : null}
+        </div>
+
     </div>
 
   );
