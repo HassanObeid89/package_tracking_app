@@ -23,7 +23,7 @@ function Header( { data } ) {
             <img className = 'logo' src={logo} />
             <p className='logo_text'>Package Tracker</p>
             </div>
-            <div className = 'header'>
+            <div className = 'header_right'>
                 <span className='header_icon'><FaUser  /></span>
                 <p className="user_name">{user_name}</p>
             </div>

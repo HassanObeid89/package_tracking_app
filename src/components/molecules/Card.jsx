@@ -27,7 +27,7 @@ function Card( {data} ) {
 
     return (
             
-             <article className = 'card'> 
+             <article > 
             
             <div className = 'inline'>
                 <p><BiPackage /> Packege-ID: {parcel_id} </p>
