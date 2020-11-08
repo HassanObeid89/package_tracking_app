@@ -1,0 +1,13 @@
+.footer_style {
+    display: flex;
+    align-items: center;
+    position: initial;
+    justify-content: space-between;
+    padding: 20px;
+    top: 0;
+    z-index: 100;
+    background-color: antiquewhite;
+
+}
+
+
