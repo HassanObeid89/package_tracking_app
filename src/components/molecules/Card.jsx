@@ -27,7 +27,7 @@ function Card( {data} ) {
                 <p><GrLocation /> Delivery place: {location_name} </p>
                 <p><FaRegBuilding /> From: {sender} </p>
                 <p><GrStatusUnknown /> Status: {status} </p>
-                <p><FcViewDetails /> Details: {notes} </p>
+                {/* <p><FcViewDetails /> Details: {notes} </p> */}
             </div>
                 
             </article>
