@@ -6,6 +6,7 @@ import { FaRegBuilding } from "react-icons/fa";
 import { GrStatusUnknown } from "react-icons/gr";
 import { FcViewDetails } from "react-icons/fc";
 
+
 function Card( {data} ) {
     const {
         
@@ -19,7 +20,7 @@ function Card( {data} ) {
 
     return (
             
-             <article > 
+             <article className="cards" > 
             
             <div className = 'inline'>
                 <p><BiPackage /> Packege-ID: {parcel_id} </p>
@@ -30,6 +31,7 @@ function Card( {data} ) {
             </div>
                 
             </article>
+            
              
 
         

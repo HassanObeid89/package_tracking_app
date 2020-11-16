@@ -1,6 +1,8 @@
 import React from 'react'
+import { Link, Route, Switch } from 'react-router-dom';
 
 import Card from '../molecules/Card';
+
 
  
 function OrdersPage({ data }) {
@@ -13,8 +15,10 @@ function OrdersPage({ data }) {
     
     return (
         
+        
         <div className='cardDetails'>{Cards}</div>
-
+        
+        
     )
 }
 
