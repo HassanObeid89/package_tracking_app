@@ -25,9 +25,9 @@ function Card( {data} ) {
             <div className = 'inline'>
                 <p><BiPackage /> Packege-ID: {parcel_id} </p>
                 <p><GrLocation /> Delivery place: {location_name} </p>
-                <p><FaRegBuilding /> From: {sender} </p>
-                <p><GrStatusUnknown /> Status: {status} </p>
-                {/* <p><FcViewDetails /> Details: {notes} </p> */}
+                {/* <p><FaRegBuilding /> From: {sender} </p>
+                <p><GrStatusUnknown /> Status: {status} </p> */}
+                <p><FcViewDetails /> Details: {notes} </p>
             </div>
                 
             </article>
